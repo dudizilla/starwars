@@ -1,5 +1,9 @@
 # dudizilla-starwars
 
+## Figma Prototype
+
+[here](https://www.figma.com/file/5e0sECPXa5Y0s9OZHinhwW/Untitled?node-id=0%3A1)
+
 ## Project setup
 ```
 npm install
