@@ -3,7 +3,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: black;
+  background: var(--background-color-primary);
 
   .header {
     width: 80%;
@@ -18,7 +18,6 @@
       font-family: 'Star Jedi', arial;
       color: var(--text-color);
     }
-  
   }
 
   .content {
