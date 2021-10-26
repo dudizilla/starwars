@@ -1,12 +1,11 @@
 <template>
-  <div class="loader-wrapper">
-    <div class="clock-loader"></div>
-  </div>
+  <button class="button">
+    <slot></slot>
+  </button>
 </template>
 
 <script>
-
 export default {
   functional: true,
-}
+};
 </script>

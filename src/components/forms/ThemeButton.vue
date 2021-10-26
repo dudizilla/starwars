@@ -61,9 +61,8 @@ export default {
 </script>
 
 <style scoped>
-
 .wrapper {
-    position: absolute;
-    padding: 16px;
+  position: absolute;
+  padding: 16px;
 }
 </style>

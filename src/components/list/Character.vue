@@ -7,15 +7,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { CharacterType } from '../../../types'
+import { defineComponent } from "vue";
+import { CharacterType } from "../../../types";
 
 export default defineComponent({
   props: {
     character: {
       type: Object as () => CharacterType,
-      required: true
-    }
-  }
-})
+      required: true,
+    },
+  },
+});
 </script>
