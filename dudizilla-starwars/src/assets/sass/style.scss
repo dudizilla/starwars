@@ -1,0 +1,20 @@
+@import '~sanitize.css';
+
+@import 'base/variables';
+@import 'base/easing';
+
+@import 'base/global';
+
+@import 'modules/main';
+@import 'modules/list';
+@import 'modules/error';
+@import 'modules/theme-toggle';
+
+@import '../../components/forms/InputText/InputText';
+@import '../../components/forms/Button/Button';
+@import '../../components/partials/Loader/Loader';
+@import '../../components/list/Character';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600&display=swap');

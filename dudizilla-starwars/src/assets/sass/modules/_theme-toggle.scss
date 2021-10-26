@@ -1,0 +1,60 @@
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+
+:root {
+  --background-color-primary: #242424;
+  --background-color-secondary: #888888;
+  --accent-color: #d30d0d;
+  --text-color: #f7f8f7;
+  --medium: #d4d4d4;
+  --destaque: #fff;
+  --element-size: 4rem;
+}
+
+:root.light-theme {
+  --background-color-primary: #dfe2df;
+  --background-color-secondary: #c4c4c4;
+  --accent-color: #2e67f8;
+  --text-color: #262222;
+  --destaque: #000;
+  --medium: #c4c4c4;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch-label {
+  align-items: center;
+  background: var(--text-primary-color);
+  border: calc(var(--element-size) * 0.025) solid var(--accent-color);
+  border-radius: var(--element-size);
+  cursor: pointer;
+  display: flex;
+  font-size: calc(var(--element-size) * 0.3);
+  height: calc(var(--element-size) * 0.35);
+  position: absolute;
+  padding: calc(var(--element-size) * 0.04);
+  transition: background 0.5s ease;
+  justify-content: space-between;
+  width: var(--element-size);
+  z-index: 1;
+}
+
+.switch-toggle {
+  position: absolute;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  top: calc(var(--element-size) * -0.05);
+  left: calc(var(--element-size) * 0.02);
+  height: calc(var(--element-size) * 0.4);
+  width: calc(var(--element-size) * 0.4);
+  transform: translateX(-1);
+  transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+.switch-toggle-checked {
+  transform: translateX(calc(var(--element-size) * 0.5)) !important;
+}

@@ -1,0 +1,32 @@
+.root {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: var(--background-color-primary);
+
+  .header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0 25px;
+  
+    .title {
+      font-size: 3em;
+      margin: 0;
+      font-family: 'Star Jedi', arial;
+      color: var(--text-color);
+    }
+  }
+
+  .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
