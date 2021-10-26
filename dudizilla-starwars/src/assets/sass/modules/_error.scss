@@ -1,0 +1,23 @@
+.error {
+    text-align: center;
+    padding: 50px 30px;
+  }
+  
+  .error-title {
+    font-size: ctx(32px);
+    margin: 20px 0 10px 0;
+  }
+  
+  .error-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  
+  .error-text {
+    color: darken(white, 50%);
+    font-size: ctx(18px);
+    margin: 0;
+  }
+  

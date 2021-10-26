@@ -1,8 +1,4 @@
-# star-wars
-
-## Project Prototype
-
-https://www.figma.com/file/5e0sECPXa5Y0s9OZHinhwW/Untitled?node-id=15%3A177
+# dudizilla-starwars
 
 ## Project setup
 ```

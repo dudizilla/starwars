@@ -1,0 +1,19 @@
+.inputText {
+  color: var(--text-color);
+  position: relative;
+  margin: 25px 0;
+}
+
+.inputText-field {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  padding: 12px 20px;
+  font-size: ctx(15px);
+  width: 100%;
+  background: transparent;
+  color: var(--text-color);
+  border: 1.5px solid --accent-color;
+  border-radius: 20px;
+  text-indent: 10px;
+  flex: 1;
+}

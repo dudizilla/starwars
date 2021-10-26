@@ -1,0 +1,21 @@
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader {
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    text-align: center;
+  
+    span {
+      display: block;
+      animation: 2s rotate infinite linear;
+    }
+  }
+  
