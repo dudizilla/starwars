@@ -2,24 +2,20 @@
 .button {
   all: unset;
   background: var(--background-color-secondary);
-  color: var(--black);
-  padding: 12px 50px;
+  width: 102px;
+  height: 36px;
   text-align: center;
   display: block;
   text-transform: uppercase;
-  margin: 40px auto auto;
-  border: 2px solid white;
+  margin: auto;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
   transition: 200ms;
   cursor: pointer;
   font-size: ctx(13px);
-
+  
   &:hover {
-    color: white;
+    color: var(--destaque);
     background: transparent;
   }
-}
-
-.button--Load {
-  @extend %button;
-  margin-bottom: 50px;
 }

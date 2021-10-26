@@ -27,10 +27,15 @@
           </p>
         </div>
 
-        <Loader v-if="data.loading" />
-        <Button v-else-if="data.next" class="button--Load" @click="fetchPeople"
-          >Load more</Button
-        >
+          <div class="nav">
+            <Button v-if="data.previous" class="button--Previous" @click="fetchPeople"
+              >Previous</Button
+            >
+            <Button v-if="data.next" class="button--Next" @click="fetchPeople"
+              >Next</Button
+            >
+          </div>
+          <Loader v-if="data.loading" />
         </div>
       </section>
     </main>
@@ -59,11 +64,13 @@ export default defineComponent({
       loading: false,
       showList: false,
       next: null,
+      previous: null,
       people: [] as CharacterType[],
       filters: {
         name: ''
       } as Filter
     })
+
 
     const fetchPeople = () => {
       data.loading = true
@@ -73,11 +80,16 @@ export default defineComponent({
         .then((res) => {
           data.loading = false
           data.next = res.next
-          data.people.push(...res.results)
+          data.previous = res.previous
+          console.log("previous: " +  JSON.stringify(res.previous) + " Next: " + JSON.stringify(res.next))
+          data.people = res.results
         })
     }
     
+
     fetchPeople()
+
+    
     const searchPeople = () => {
       const url = `http://swapi.dev/api/people/?search=${data.filters.name}`
       fetch(url)

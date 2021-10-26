@@ -6,17 +6,19 @@ html, body {
 :root {
   --background-color-primary: #242424;
   --background-color-secondary: #888888;
-  --accent-color: #ff0000;
+  --accent-color: #d30d0d;
   --text-color: #f7f8f7;
   --medium: #d4d4d4;
+  --destaque: #fff;
   --element-size: 4rem;
 }
 
 :root.light-theme {
-  --background-color-primary: #f7f8f7;
+  --background-color-primary: #dfe2df;
   --background-color-secondary: #c4c4c4;
-  --accent-color: #2ff924;
+  --accent-color: #2e67f8;
   --text-color: #262222;
+  --destaque: #000;
   --medium: #c4c4c4;
 }
 
