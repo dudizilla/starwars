@@ -20,8 +20,9 @@
 <script>
 export default {
   mounted() {
-    const initUserTheme = this.getMediaPreference();
-    this.setTheme(initUserTheme);
+    if(localStorage.setTheme) {
+      this.setTheme = localStorage.setTheme
+    }
   },
   data() {
     return {
@@ -41,16 +42,6 @@ export default {
       localStorage.setItem("user-theme", theme);
       this.userTheme = theme;
       document.documentElement.className = theme;
-    },
-    getMediaPreference() {
-      const hasDarkPreference = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      if (hasDarkPreference) {
-        return "dark-theme";
-      } else {
-        return "light-theme";
-      }
     },
   },
 };
