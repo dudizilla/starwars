@@ -1,0 +1,31 @@
+.home-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+
+    header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      #char-list-title {
+        color: var(--text-color);
+        font-size: 2.5em;
+        margin: 0 2em;
+      }
+    }
+  }
+  .content {
+    .char-list {
+      height: 90vh;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+
+      .pagination {
+        width: 20px;
+      }
+    }
+  }

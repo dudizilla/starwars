@@ -1,0 +1,21 @@
+%button,
+.button {
+  all: unset;
+  background: var(--background-color-secondary);
+  width: 102px;
+  height: 36px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  transition: 200ms;
+  cursor: pointer;
+  font-family: 'Righteous', coursive;
+  font-size: ctx(13px);
+  
+  &:hover {
+    color: var(--destaque);
+    background: transparent;
+  }
+}
