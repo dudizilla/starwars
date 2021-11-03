@@ -7,14 +7,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { Filter } from '../models/index'
+import { defineComponent } from "vue";
+import { Filter } from "../models/index";
 export default defineComponent({
   props: {
     character: {
       type: Object as () => Filter,
-      required: true
-    }
-  }
-})
+      required: true,
+    },
+  },
+});
 </script>

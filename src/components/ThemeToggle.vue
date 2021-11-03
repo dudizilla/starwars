@@ -20,8 +20,8 @@
 <script>
 export default {
   mounted() {
-    if(localStorage.setTheme) {
-      this.setTheme = localStorage.setTheme
+    if (localStorage.setTheme) {
+      this.setTheme = localStorage.setTheme;
     }
   },
   data() {

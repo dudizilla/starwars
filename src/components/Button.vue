@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  functional: true
-}
+  functional: true,
+};
 </script>

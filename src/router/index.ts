@@ -10,8 +10,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/people/:id",
     name: "CharacterInfo",
-    component: () =>
-      import("../views/CharacterInfo.vue"),
+    component: () => import("../views/CharacterInfo.vue"),
   },
 ];
 
